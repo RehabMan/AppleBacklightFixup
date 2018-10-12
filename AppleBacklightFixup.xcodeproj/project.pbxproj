@@ -11,7 +11,6 @@
 		1C9CB7B01C789FF500231E41 /* kern_applbkl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CB7AE1C789FF500231E41 /* kern_applbkl.cpp */; };
 		1C9CB7B11C789FF500231E41 /* kern_applbkl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1C9CB7AF1C789FF500231E41 /* kern_applbkl.hpp */; };
 		4C149BC32108ED6B00DEDF77 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4C149BC22108ED6A00DEDF77 /* LICENSE.txt */; };
-		4C149BC62108ED9000DEDF77 /* SSDT-PNLF.dsl in Resources */ = {isa = PBXBuildFile; fileRef = 4C149BC52108ED9000DEDF77 /* SSDT-PNLF.dsl */; };
 		CE405EC91E49DD9700AA0B3D /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE405EC71E49DD7100AA0B3D /* libkmod.a */; };
 		CE405ED91E4A080700AA0B3D /* plugin_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE405ED81E4A080700AA0B3D /* plugin_start.cpp */; };
 /* End PBXBuildFile section */
@@ -53,6 +52,7 @@
 		CE405ED21E49F9FC00AA0B3D /* kern_api.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_api.hpp; sourceTree = "<group>"; };
 		CE405ED81E4A080700AA0B3D /* plugin_start.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plugin_start.cpp; sourceTree = "<group>"; };
 		CE405EDA1E4A080F00AA0B3D /* plugin_start.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = plugin_start.hpp; sourceTree = "<group>"; };
+		ED2B3A0D2170F8A900CB5EA6 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,7 @@
 		1C748C1D1C21952C0024EED2 = {
 			isa = PBXGroup;
 			children = (
+				ED2B3A0D2170F8A900CB5EA6 /* makefile */,
 				1CF01C911C8CF982002DCEA3 /* Docs */,
 				1C748C291C21952C0024EED2 /* AppleBacklightFixup */,
 				4C149BC42108ED7B00DEDF77 /* Resources */,
@@ -225,7 +226,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C149BC32108ED6B00DEDF77 /* LICENSE.txt in Resources */,
-				4C149BC62108ED9000DEDF77 /* SSDT-PNLF.dsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +354,7 @@
 				MODULE_NAME = com.hieplpvip.AppleBacklightFixup;
 				MODULE_START = "$(PRODUCT_NAME)_kern_start";
 				MODULE_STOP = "$(PRODUCT_NAME)_kern_stop";
-				MODULE_VERSION = 1.0.0;
+				MODULE_VERSION = 1.0.1;
 				OTHER_CFLAGS = (
 					"-mmmx",
 					"-msse",
@@ -398,7 +398,7 @@
 				MODULE_NAME = com.hieplpvip.AppleBacklightFixup;
 				MODULE_START = "$(PRODUCT_NAME)_kern_start";
 				MODULE_STOP = "$(PRODUCT_NAME)_kern_stop";
-				MODULE_VERSION = 1.0.0;
+				MODULE_VERSION = 1.0.1;
 				OTHER_CFLAGS = (
 					"-mmmx",
 					"-msse",

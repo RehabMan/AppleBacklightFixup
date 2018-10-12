@@ -7,11 +7,6 @@
 
 #include <Headers/kern_api.hpp>
 #include <Headers/kern_util.hpp>
-#include <Library/LegacyIOService.h>
-
-#include <mach/vm_map.h>
-#include <IOKit/IORegistryEntry.h>
-
 #include "kern_applbkl.hpp"
 
 static const char *kextId { "com.apple.driver.AppleBacklight" };
@@ -43,7 +38,7 @@ void APPLBKL::processKext(KernelPatcher &patcher, size_t index, mach_vm_address_
             const uint8_t find[]    = { 0x46, 0x25, 0x75, 0x54, 0x25, 0x30, 0x34, 0x78, 0x00 };
             const uint8_t replace[] = { 0x46, 0x25, 0x75, 0x54, 0x78, 0x78, 0x78, 0x78, 0x00 };
             KernelPatcher::LookupPatch patch = {&kext, find, replace, sizeof(find), 0};
-            if (patcher.compatibleKernel(KernelVersion::Sierra, KernelVersion::Mojave))
+            //if (patcher.compatibleKernel(KernelVersion::Sierra, KernelVersion::Mojave))
             {
                 DBGLOG("applbkl", "applying patch");
                 patcher.applyLookupPatch(&patch);
