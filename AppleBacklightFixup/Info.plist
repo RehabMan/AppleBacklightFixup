@@ -65,7 +65,7 @@
 			<key>IONameMatch</key>
 			<string>backlight</string>
 			<key>IOProbeScore</key>
-			<integer>2500</integer>
+			<integer>5000</integer>
 			<key>IOProviderClass</key>
 			<string>IOACPIPlatformDevice</string>
 		</dict>
