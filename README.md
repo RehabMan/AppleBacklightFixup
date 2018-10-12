@@ -3,6 +3,10 @@ AppleBacklightFixup
 
 Lilu plugin for enabling support for backlight using RehabMan's patches
 
+### Downloads
+
+RehabMan pre-built is on bitbucket: https://bitbucket.org/RehabMan/applebacklightfixup/downloads/
+
 ### Features
 - No need Clover patch and `AppleBacklightInjector.kext`
 - Work in Recovery and Installation
